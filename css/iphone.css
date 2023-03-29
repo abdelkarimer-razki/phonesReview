@@ -1,0 +1,235 @@
+.firstContainer
+{
+	text-align: center;
+}
+
+.specs
+{
+	position: relative;
+	height: 100vh;
+	width: 980px;
+	padding: 70pt 0 40pt 0;
+	margin: 0 auto;
+	background-color: #161617;
+}
+
+.comments
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.comments > h2
+{
+	font-size: 40pt;
+	color: white;
+	margin: 0 20pt;
+}
+
+.comments > p
+{
+	font-size: 20pt;
+	color: #898989;
+	width: 300px;
+	text-align: center;
+	margin: 20pt 20pt;
+}
+
+.phonePic
+{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	background-position-x: center;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-image: url("../assets/iphoneclose.png");
+}
+
+.phonePic > img
+{
+	width: 100%;
+}
+
+.phoneName
+{
+	color: white;
+}
+.phoneAch
+{
+	color: #898989;
+	font-weight: lighter;
+}
+
+.specsContainer
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.spec
+{
+	cursor: pointer;
+	display: flex;
+	position: relative;
+	background-color: black;
+	flex-wrap: wrap;
+	padding: 10pt;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	border-radius: 25pt;
+	height: 400px;
+	margin: 20pt 0;
+}
+
+.specTitle
+{
+	font-size: 30pt;
+	color: #7E5B87;
+	transition-duration: 0.3s;
+}
+
+.specDescription
+{
+	color: white;
+	font-size: 18pt;
+	margin: 10pt;
+}
+
+.spec:hover>.specDescription>span
+{
+	text-shadow:
+	0 0 7px #ffffff,
+	0 0 10px #ffeaea,
+	0 0 21px #ffb6ff,
+	0 0 42px #f9b4ff,
+	0 0 82px #f876ff,
+	0 0 92px #f453ff,
+	0 0 102px #d033db,
+	0 0 151px #ee00ff;
+}
+
+.spec:hover>.specTitle
+{
+	text-shadow:
+	0 0 7px #ffffff,
+	0 0 10px #ffeaea,
+	0 0 21px #ffb6ff,
+	0 0 42px #f9b4ff,
+	0 0 82px #f876ff,
+	0 0 92px #f453ff,
+	0 0 102px #d033db,
+	0 0 151px #ee00ff;
+}
+
+.specDescription>span
+{
+	color: #7E5B87;
+	transition-duration: 0.3s;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+#camera
+{
+	position: relative;
+	padding: 0%;
+	width: 550px;
+	height: 366px;
+}
+
+#camera > img
+{
+	width: 100%;
+	border-radius: 25pt;
+}
+
+#camera > .specDescription
+{
+	color: black;
+	position: absolute;
+	font-weight: bolder;
+	top: 150px;
+	font-size: 20pt;
+}
+
+#camera > .specTitle
+{
+    top: 78px;
+	color: #7E5B87;
+	position: absolute;
+    font-weight: bolder;
+    font-size: 60pt;
+}
+
+#battery
+{
+	width: 302px;
+	padding: 0;
+}
+
+@media(max-width:980px)
+{
+	#last
+	{
+		width: 100% !important;
+	}
+	.specs
+	{
+		width: 100%;
+	}
+	@media(max-width:896px)
+	{
+		.spec
+		{
+			width: 100%;
+			margin: 10pt 0;
+		}
+		#camera
+		{
+			width: 100%;
+			margin: 10pt 0;
+		}
+
+		.spec > .specTitle
+		{
+			font-size: 20pt !important;
+		}
+
+		.spec > .specDescription
+		{
+			font-size: 14pt !important;
+		}
+
+		#camera > img
+		{
+			display: none;
+		}
+
+		#camera > .specDescription
+		{
+			color: white;
+		}
+		
+		#battery
+		{
+			margin: 10pt 0;
+			width: 100%;
+		}
+		.comments
+		{
+			display: none;
+		}
+	}
+}
